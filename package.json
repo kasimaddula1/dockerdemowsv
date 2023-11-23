@@ -1,0 +1,22 @@
+{
+  "name": "wsv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx wdio run wdio.conf.ts"
+  },
+  "author": "Kasi Maddula",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^8.23.1",
+    "@wdio/local-runner": "^8.23.1",
+    "@wdio/mocha-framework": "^8.23.1",
+    "@wdio/spec-reporter": "^8.23.1",
+    "chromedriver": "^119.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "wdio-chromedriver-service": "^8.1.1",
+    "wdio-docker-service": "^3.2.1"
+  }
+}
