@@ -64,4 +64,6 @@ EXPOSE 8080
 RUN npm install
 
 # ON RUNNING THE IMAGE THIS COMMAND WILL BE TRIGGERED BY DEFAULT
-ENTRYPOINT ["npm", "run", "test"]
+ENTRYPOINT ["npm", "run"]
+
+CMD ["test"]
