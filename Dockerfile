@@ -63,6 +63,16 @@ COPY . .
 EXPOSE 8080
 RUN npm install
 
+# Install OpenJDK-11
+RUN apt-get update &&\
+    apt-get install -y openjdk-11-jdk ca-certificates-java && \
+    apt-get clean && \
+    update-ca-certificates -f
+
+# Setup JAVA_HOME -- useful for docker commandline
+ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64/
+RUN export JAVA_HOME
+
 # ON RUNNING THE IMAGE THIS COMMAND WILL BE TRIGGERED BY DEFAULT
 ENTRYPOINT ["npm", "run"]
 
