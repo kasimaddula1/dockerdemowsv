@@ -57,7 +57,7 @@ RUN google-chrome --version
 ENV DBUS_SESSION_BUS_ADDRESS=/dev/null
 
 # INSTALL PACKAGES
-WORKDIR /usr/wdiowithoutgrid/
+WORKDIR /wdiowsv/
 COPY package*.json ./
 COPY . .
 EXPOSE 8080
